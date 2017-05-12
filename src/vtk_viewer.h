@@ -35,7 +35,7 @@ class CVTKViewer
     void keyboard_callback(const pcl::visualization::KeyboardEvent& e, void*);
     void mouse_callback(const pcl::visualization::MouseEvent&, void*);
     void run(); // just show this point cloud
-    void runOnce(); // just spinOnce
+    void runOnce(int ms = 1); // just spinOnce
     bool stopped();
     
     boost::shared_ptr<pcl::visualization::PCLVisualizer>& 

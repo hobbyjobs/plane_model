@@ -160,11 +160,11 @@ void CVTKViewer<PointT>::run()
 }
 
 template<typename PointT>
-void CVTKViewer<PointT>::runOnce()
+void CVTKViewer<PointT>::runOnce(int ms)
 {
   if(!cloud_viewer_->wasStopped())
   {
-    cloud_viewer_->spinOnce(); // thread yield
+    cloud_viewer_->spinOnce(ms); // thread yield
   }
 }
 
