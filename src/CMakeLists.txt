@@ -1,5 +1,5 @@
 
-project(sr_slam)
+project(plane_model)
 
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../sr_slam)
 
@@ -19,8 +19,8 @@ target_link_libraries(plane ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBS} 
 # add_executable(test_plane test_plane.cpp)
 # target_link_libraries(test_plane plane)
 
-add_executable(main_plane main_plane.cpp)
-target_link_libraries(main_plane plane sr4k_io)
+# add_executable(main_plane main_plane.cpp)
+# target_link_libraries(main_plane plane sr4k_io)
 
-add_executable(view_planes view_planes.cpp)
-target_link_libraries(view_planes plane sr4k_io)
+# add_executable(view_planes view_planes.cpp)
+# target_link_libraries(view_planes plane sr4k_io)
